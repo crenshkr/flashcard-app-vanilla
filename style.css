@@ -36,7 +36,7 @@ and each level of nesting will
 get a different color border.
 */
 
-/* body > * {
+body > * {
   border: pink solid 5px;
 }
 body > * > * {
@@ -50,4 +50,4 @@ body > * > * > * > * {
 }
 body > * > * > * > * > * {
   border: black solid 5px;
-} */
+}
