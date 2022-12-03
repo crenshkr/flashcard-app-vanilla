@@ -2,7 +2,7 @@
   /* These are just examples for some custom selectors */
   --dark_purple_bg_color: rgb(66, 66, 166);
   --light_purple: rgb(170, 170, 236);
-  --light_bg_color: rgb(232, 232, 248);
+  --light_bg_color: rgb(#eeeeee);
   --light_text_color: rgb(232, 232, 248);
   --warning_red: rgb(232, 68, 68);
 
@@ -13,18 +13,46 @@
 }
 
 * {
-  /* RESET Perhaps the most important reset! */
   box-sizing: border-box;
 }
 
 body {
-  /* RESET The margin reset needs to be in the body selector specifically */
   margin: 0;
-  /* background-color and font-family aren't resets.
-     Rather just an example of CSS variable and a good
-     starter font. */
   background-color: var(--light_bg_color);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.primary-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  height: 5vh;
+  width: 46.2vh; /*not sure why this number is perfect*/
+}
+.header__logo {
+}
+.top-interface {
+  height: 20vh;
+  width: 46.2vh; /*not sure why this number is perfect*/
+}
+.top-interface__edit-button {
+}
+.card-display {
+  height: 42vh;
+  width: 46.2vh; /*not sure why this number is perfect*/
+}
+.card-display__info-text {
+}
+.bottom-interface {
+  height: 33vh;
+  width: 46.2vh; /*not sure why this number is perfect*/
+}
+.buttom-interface__flip {
+}
+.buttom-interface__next {
 }
 
 /* DEBUGGING*/
@@ -36,7 +64,7 @@ and each level of nesting will
 get a different color border.
 */
 
-body > * {
+/* body > * {
   border: pink solid 5px;
 }
 body > * > * {
@@ -50,4 +78,4 @@ body > * > * > * > * {
 }
 body > * > * > * > * > * {
   border: black solid 5px;
-}
+} */
