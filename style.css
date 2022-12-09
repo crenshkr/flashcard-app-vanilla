@@ -31,14 +31,27 @@ body {
 .header {
   height: 5vh;
   width: 46.2vh; /*not sure why this number is perfect*/
+  display: flex;
+  justify-content: end;
 }
 .header__logo {
+  margin-right: 2%;
+  margin-top: 1%;
+  color: blue;
 }
 .top-interface {
   height: 20vh;
   width: 46.2vh; /*not sure why this number is perfect*/
 }
 .top-interface__edit-button {
+  background: linear-gradient(180deg, yellow, rgb(255, 208, 0));
+  color: white;
+  border: solid rgb(255, 208, 0) 2.5px;
+  border-radius: 5px;
+  height: 25%;
+  width: 25%;
+  margin-left: 10%;
+  font-size: large;
 }
 .card-display {
   height: 42vh;
